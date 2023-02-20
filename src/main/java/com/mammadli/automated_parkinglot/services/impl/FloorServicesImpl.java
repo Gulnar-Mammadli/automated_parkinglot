@@ -37,11 +37,6 @@ public class FloorServicesImpl implements FloorServices {
             carRepository.deleteAll(cars);
             floorRepository.deleteById(floorId);
         }
-//        if (floor.isPresent()) {
-//            ParkingLot parkingLot = floor.get().getParkingLot();
-//            parkingLot.getFloors().remove(floor.get());
-//            floorRepository.deleteById(floorId);
-//        }
         return null;
     }
 
