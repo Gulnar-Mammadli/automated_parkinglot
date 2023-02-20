@@ -62,6 +62,7 @@ class ParkingLotServicesImplTest {
 
         assertNull(result);
         verify(parkingLotRepository).findById(id);
+        verify(parkingLotRepository).deleteById(id);
 
     }
 
@@ -74,5 +75,6 @@ class ParkingLotServicesImplTest {
 
         assertNull(result);
         verify(parkingLotRepository).findById(id);
+        verify(parkingLotRepository, never()).deleteById(any());
     }
 }
